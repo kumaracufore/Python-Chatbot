@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./static/images/baumalight-mascot.png" type="image/png" />
+  <title>Chatty - AI Companion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet" />
+  <link rel="stylesheet" href="./static/css/index.css" />
+</head>
+
+<body>
+  <button class="chat-toggle-btn" id="toggle-chat"><img src="./static/images/baumalight-mascot.png"
+      alt="Chat Icon" /></button>
+
+  <div class="chatbox" id="chatbox">
+    <div class="chatbox-header">
+      <div class="chat-title-container">
+        <h5 class="mb-0 small-chat-title">BaumaLight AI ChatBot</h5>
+      </div>
+      <div>
+        <button type="button" id="minimize-chat" class="minimize-btn"><i class="fas fa-minus"></i></button>
+        <button type="button" id="close-chat" class="btn-close btn-close-white" aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="baumalight-logo">
+      <img src="./static/images/baumalight-logo.png" alt="baumalight-logo" class="baumalight-image" />
+    </div>
+
+    <div class="chatbox-messages" id="messages">
+      <div class="message-container">
+        <div class="message receiver">Welcome to Baumalight</div>
+        <div class="message receiver">We are delighted to help you today!</div>
+      </div>
+      <div class="message-initial-input" id="message-initial-input">
+        <div class="statement-container">
+          <div class="message-initial" data-url="https://online-order.baumalight.com/product/en">
+            I want to explore products <img src="./static/images/external.png" alt="" class="link-icon" />
+          </div>
+        </div>
+        <div class="statement-container">
+          <div class="message-initial" data-url="https://online-order.baumalight.com/product/factorydiscounts/en">
+            Explore Factory Discounts <img src="./static/images/external.png" alt="" class="link-icon" />
+          </div>
+        </div>
+        <div class="statement-container">
+          <div class="message-initial" data-url="https://baumalight.com/financial_calculator/en/">
+            I need assistance in Financing <img src="./static/images/external.png" alt="" class="link-icon" />
+          </div>
+        </div>
+        <div class="statement-container">
+          <div class="message-initial" data-url="https://online-order.baumalight.com/product/en/validate">
+            I have a sales question <img src="./static/images/external.png" alt="" class="link-icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="message-loader" id="message-loader" style="display: none;">
+      <div class="chat-bubble">
+        <div class="typing">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+    <div class="clear-popup" style="display: none;">
+      <div class="clear-conversation-popup">
+        <div class="popup-content">
+          <p class="clear-conversation">Clear conversation</p>
+          <p class="display-clear-conversation-message">All messages in the chat will be cleared. Would you like to
+            clear this conversation?</p>
+          <div class="popup-actions">
+            <div class="clear-buttons">
+              <button class="cancel-btn">Cancel</button>
+              <button class="clear-btn">Clear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chatbox-input">
+      <input type="text" id="message-input" placeholder="Ask a question" />
+      <button id="send-button"><img src="./static/images/send.png" alt="" class="send-icon" /></button>
+    </div>
+
+    <div class="acufore-trademark">
+      <a href="https://www.acufore.com/analytics-data" target="_blank" rel="noopener noreferrer"
+        style="font-size: 0.8rem; text-decoration: none; color: black;">Powered by Acufore&reg;</a> <img
+        src="./static/images/acufore-favicon.png" alt="acufore-favicon" class="acufore-favicon" />
+    </div>
+  </div>
+
+  <script src="./static/javascript/index.js"></script>
+</body>
+
+</html>
